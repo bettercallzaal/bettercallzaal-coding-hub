@@ -1,130 +1,141 @@
 import { useState, useMemo } from 'react'
+import Head from 'next/head'
+import Link from 'next/link'
 
-const LANGUAGES = ['TypeScript', 'Python', 'HTML', 'JavaScript', 'Solidity', 'Other']
+interface Project {
+  id: string
+  name: string
+  description: string
+  url: string
+  language: string
+  status: string
+}
 
-export default function Home() {
+interface Props {
+  projects: Project[]
+}
+
+export default function Portfolio({ projects }: Props) {
   const [search, setSearch] = useState('')
-  const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null)
-  const [projects, setProjects] = useState<any[]>([])
+  const [selectedLanguage, setSelectedLanguage] = useState('All')
 
-  const [isLoading, setIsLoading] = useState(true)
-
-  useMemo(() => {
-    fetch('/projects.json')
-      .then(res => res.json())
-      .then(data => {
-        setProjects(data)
-        setIsLoading(false)
-      })
-  }, [])
+  const languages = ['All', ...new Set(projects.map(p => p.language))]
 
   const filtered = useMemo(() => {
-    return projects.filter((p: any) => {
-      const matchesSearch = p.name.toLowerCase().includes(search.toLowerCase()) ||
-        p.description?.toLowerCase().includes(search.toLowerCase())
-      const matchesLanguage = !selectedLanguage || p.language === selectedLanguage
+    return projects.filter(project => {
+      const matchesSearch = 
+        project.name.toLowerCase().includes(search.toLowerCase()) ||
+        project.description.toLowerCase().includes(search.toLowerCase())
+      
+      const matchesLanguage = 
+        selectedLanguage === 'All' || project.language === selectedLanguage
+
       return matchesSearch && matchesLanguage
     })
   }, [search, selectedLanguage, projects])
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-        <p className="text-slate-600">Loading projects...</p>
-      </div>
-    )
-  }
-
   return (
-    <div className="min-h-screen bg-slate-50">
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <h1 className="text-3xl font-bold text-slate-900">All Projects</h1>
-          <p className="text-slate-600 mt-2">Browse {projects.length} projects across different languages</p>
-        </div>
-      </header>
+    <>
+      <Head>
+        <title>Zaal's Portfolio Hub</title>
+        <meta name="description" content="70 projects aggregated with search and filtering" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8">
-          <input
-            type="text"
-            placeholder="Search projects..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          />
-        </div>
+      <main className="min-h-screen bg-gradient-to-br from-gray-900 to-black p-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
+            <h1 className="text-5xl font-bold mb-4">Zaal's Projects</h1>
+            <p className="text-lg text-gray-400">
+              {projects.length} projects across {new Set(projects.map(p => p.language)).size} languages
+            </p>
+          </div>
 
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => setSelectedLanguage(null)}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                !selectedLanguage
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
-              }`}
-            >
-              All Languages
-            </button>
-            {LANGUAGES.map((lang) => (
+          {/* Search Bar */}
+          <div className="mb-8">
+            <input
+              type="text"
+              placeholder="Search projects by name or description..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-blue-500 focus:outline-none"
+            />
+          </div>
+
+          {/* Language Filter */}
+          <div className="mb-8 flex flex-wrap gap-3">
+            {languages.map(lang => (
               <button
                 key={lang}
                 onClick={() => setSelectedLanguage(lang)}
-                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                  selectedLanguage === lang
+                className={`px-4 py-2 rounded-full font-medium transition ${\n                  selectedLanguage === lang
                     ? 'bg-blue-600 text-white'
-                    : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
+                    : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                 }`}
               >
                 {lang}
               </button>
             ))}
           </div>
-        </div>
 
-        <div className="mb-6 text-slate-600">
-          Showing {filtered.length} {filtered.length === 1 ? 'project' : 'projects'}
-        </div>
+          {/* Results Count */}
+          <p className="text-sm text-gray-400 mb-6">
+            Showing {filtered.length} of {projects.length} projects
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((project: any) => (
-            <div
-              key={project.id}
-              className="bg-white rounded-lg border border-slate-200 p-6 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="text-lg font-semibold text-slate-900 flex-1">{project.name}</h3>
-                <span className="inline-block px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full ml-2">
-                  {project.status}
-                </span>
-              </div>
-              
-              <p className="text-slate-600 text-sm mb-4 line-clamp-2">{project.description}</p>
-              
-              <div className="flex items-center justify-between">
-                <span className="inline-block px-2 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded">
-                  {project.language}
-                </span>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 font-medium text-sm"
-                >
-                  View →
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {filtered.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-slate-600 text-lg">No projects found. Try a different search or filter.</p>
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filtered.map(project => (
+              <a
+                key={project.id}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 hover:bg-gray-750 transition group"
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="text-lg font-semibold group-hover:text-blue-400 transition">
+                    {project.name}
+                  </h3>
+                  <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                    {project.language}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-400 mb-4 line-clamp-2">
+                  {project.description}
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-green-400 font-medium">
+                    {project.status}
+                  </span>
+                  <span className="text-blue-400 text-sm group-hover:translate-x-1 transition">
+                    View →
+                  </span>
+                </div>
+              </a>
+            ))}
           </div>
-        )}
-      </div>
-    </div>
+
+          {filtered.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-gray-400 text-lg">No projects found. Try adjusting your search or filters.</p>
+            </div>
+          )}
+        </div>
+      </main>
+    </>
   )
+}
+
+export async function getStaticProps() {
+  // Load projects from the public folder
+  const projects = require('../public/projects.json')
+  
+  return {
+    props: {
+      projects: projects.slice(0, 70),
+    },
+    revalidate: 3600, // Revalidate every hour
+  }
 }

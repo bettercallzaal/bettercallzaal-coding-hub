@@ -1,6 +1,1 @@
-.next/
-node_modules/
-*.log
-.env.local
-.env.*.local
-.DS_Store
+# Dependencies\nnode_modules\n.pnp\n.pnp.js\n\n# Testing\ncoverage\n\n# Next.js\n.next\nout\n\n# Production\nbuild\n\n# Misc\n.DS_Store\n*.pem\n.env\n.env.local\n.env.development.local\n.env.test.local\n.env.production.local\n\nnpm-debug.log\nyarn-debug.log\nyarn-error.log\n\n# IDE\n.idea\n.vscode\n*.swp\n*.swo\n*~\n

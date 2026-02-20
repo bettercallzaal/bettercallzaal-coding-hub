@@ -1,1 +1,6 @@
-node_modules/\n.next/\nout/\ndist/\n*.log\n.DS_Store\n.env.local\n.env.*.local
+.next/
+node_modules/
+*.log
+.env.local
+.env.*.local
+.DS_Store

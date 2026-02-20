@@ -1,11 +1,22 @@
 import { useState, useMemo } from 'react'
-import projects from '@/projects.json'
 
 const LANGUAGES = ['TypeScript', 'Python', 'HTML', 'JavaScript', 'Solidity', 'Other']
 
 export default function Home() {
   const [search, setSearch] = useState('')
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null)
+  const [projects, setProjects] = useState<any[]>([])
+
+  const [isLoading, setIsLoading] = useState(true)
+
+  useMemo(() => {
+    fetch('/projects.json')
+      .then(res => res.json())
+      .then(data => {
+        setProjects(data)
+        setIsLoading(false)
+      })
+  }, [])
 
   const filtered = useMemo(() => {
     return projects.filter((p: any) => {
@@ -14,7 +25,15 @@ export default function Home() {
       const matchesLanguage = !selectedLanguage || p.language === selectedLanguage
       return matchesSearch && matchesLanguage
     })
-  }, [search, selectedLanguage])
+  }, [search, selectedLanguage, projects])
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+        <p className="text-slate-600">Loading projects...</p>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">

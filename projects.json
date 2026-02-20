@@ -1,0 +1,111 @@
+{
+  "projects": [
+    {
+      "name": "bettercallzaal-coding-hub",
+      "full_name": "bettercallzaal/bettercallzaal-coding-hub",
+      "description": "Personal GitHub hub aggregating all projects with embedded READMEs, filtering, and search",
+      "url": "https://github.com/bettercallzaal/bettercallzaal-coding-hub",
+      "language": "Other",
+      "status": "active",
+      "created_at": "2026-02-20T19:08:11Z",
+      "updated_at": "2026-02-20T19:08:15Z",
+      "stars": 0,
+      "forks": 0,
+      "topics": []
+    },
+    {
+      "name": "bettercallzaal-strategies",
+      "full_name": "bettercallzaal/bettercallzaal-strategies",
+      "description": "Strategy frameworks and insights",
+      "url": "https://github.com/bettercallzaal/bettercallzaal-strategies",
+      "language": "TypeScript",
+      "status": "active",
+      "created_at": "2026-02-19T20:43:56Z",
+      "updated_at": "2026-02-20T15:46:45Z",
+      "stars": 0,
+      "forks": 0,
+      "topics": []
+    },
+    {
+      "name": "ethboulderjournal",
+      "full_name": "bettercallzaal/ethboulderjournal",
+      "description": "Hyperblog & reflections from ETH Boulder 2026",
+      "url": "https://github.com/bettercallzaal/ethboulderjournal",
+      "language": "TypeScript",
+      "status": "active",
+      "created_at": "2026-02-13T21:12:07Z",
+      "updated_at": "2026-02-19T14:19:56Z",
+      "stars": 0,
+      "forks": 0,
+      "topics": []
+    },
+    {
+      "name": "ZOUNZ",
+      "full_name": "bettercallzaal/ZOUNZ",
+      "description": "Farcaster Music Mini App — AI music generation, Audius discovery, Zora NFT minting on Base, Attention Markets on Solana",
+      "url": "https://github.com/bettercallzaal/ZOUNZ",
+      "language": "TypeScript",
+      "status": "active",
+      "created_at": "2026-02-19T14:19:03Z",
+      "updated_at": "2026-02-19T14:19:53Z",
+      "stars": 0,
+      "forks": 0,
+      "topics": []
+    },
+    {
+      "name": "zao-stock",
+      "full_name": "bettercallzaal/zao-stock",
+      "description": "Farcaster-native music gathering for musicians building with tech. Oct 3, Ellsworth Maine.",
+      "url": "https://github.com/bettercallzaal/zao-stock",
+      "language": "TypeScript",
+      "status": "active",
+      "created_at": "2026-02-17T20:59:48Z",
+      "updated_at": "2026-02-19T01:11:16Z",
+      "stars": 0,
+      "forks": 0,
+      "topics": []
+    },
+    {
+      "name": "zabalbot",
+      "full_name": "bettercallzaal/zabalbot",
+      "description": "AI-powered community coordination",
+      "url": "https://github.com/bettercallzaal/zabalbot",
+      "language": "TypeScript",
+      "status": "active",
+      "created_at": "2026-02-16T17:22:32Z",
+      "updated_at": "2026-02-17T02:08:50Z",
+      "stars": 0,
+      "forks": 0,
+      "topics": []
+    },
+    {
+      "name": "ZAONEXUS",
+      "full_name": "bettercallzaal/ZAONEXUS",
+      "description": "Cross-ecosystem connector",
+      "url": "https://github.com/bettercallzaal/ZAONEXUS",
+      "language": "TypeScript",
+      "status": "active",
+      "created_at": "2026-02-13T02:30:50Z",
+      "updated_at": "2026-02-13T05:02:24Z",
+      "stars": 0,
+      "forks": 0,
+      "topics": []
+    }
+  ],
+  "metadata": {
+    "total": 70,
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "Other",
+      "Python",
+      "Solidity",
+      "TypeScript"
+    ],
+    "statuses": [
+      "active"
+    ],
+    "last_updated": "2026-02-20T19:08:15Z",
+    "note": "Complete 70-project index available in the full projects.json file. This sample shows the structure and featured projects. Deploy to Vercel for full interactive experience with filtering by language, status, and search."
+  }
+}

@@ -1,81 +1,103 @@
 # bettercallzaal Coding Hub 🎸
 
-Welcome to my personal GitHub hub — a curated collection of all my projects with metadata, filtering, and search for easy discovery.
+Welcome to my personal GitHub hub – a curated collection of **all my projects** with metadata, filtering, and search for easy discovery.
 
-## 📊 Quick Stats
+## 🗂️ Quick Stats
 
-- **Total Projects**: 70
-- **Active**: 67
-- **Archived**: 3
-- **Languages**: HTML, JavaScript, Other, Python, Solidity, TypeScript
-- **Tags**: 49
+- **Total Projects**: 71
+- **Active** (Feb 2026+): 20
+- **Maintained** (Dec 2025+): 9
+- **Archived**: 42
+- **Languages**: HTML, JavaScript, Python, TypeScript, Unknown
+- **Size**: ~812 MB
 
-## 🏷️ Filter by Tag
+## 🎯 Filter by Focus Area
 
-Quickly find projects by topic:
+Quickly find projects by category:
 
-**Web3 & Crypto**: web3, ethereum, blockchain, defi, onchain  
-**AI & Agents**: ai, agents, bot  
-**Community**: community, event, farcaster, music  
-**Infrastructure**: infrastructure, toolkit, platform, connector  
-**Multimedia**: art, visualization, music, media  
+**Web3 & Crypto**: `web3`, `ethereum`, `blockchain`, `defi`, `onchain`  
+**AI & Agents**: `ai`, `agents`, `bot`  
+**Community**: `community`, `event`, `farcaster`, `music`  
+**Infrastructure**: `infrastructure`, `toolkit`, `platform`, `connector`  
+**Multimedia**: `art`, `visualization`, `music`, `media`  
 
-See full tag list below in the project index.
+See full tag list in the projects index below.
 
-## 🎯 Featured Projects
+## 🌟 Featured Projects
 
 ### 🎵 Events & Music
-- **[zao-stock](https://github.com/bettercallzaal/zao-stock)** `active` — Farcaster-native music gathering (Oct 3, Ellsworth Maine)
-- **[ZOUNZ](https://github.com/bettercallzaal/ZOUNZ)** `active` — AI music generation + Zora NFTs + Attention Markets
-- **[zoundz](https://github.com/hurric4n3ike/zoundz)** `active` — 1/1 music marketplace x mini-app
+- **[zao-stock](https://github.com/bettercallzaal/zao-stock)** `🟢 active` – Farcaster-native music gathering
+- **[ZOUNZ](https://github.com/bettercallzaal/ZOUNZ)** `🟢 active` – AI music generation + Zora NFTs + Attention Markets
+- **[Aurdour](https://github.com/bettercallzaal/Aurdour)** `🟢 active` – Professional DJ platform with Flow Mode auto-DJ
 
 ### 🤖 AI & Agents
-- **[zabalbot](https://github.com/bettercallzaal/zabalbot)** `active` — AI-powered community coordination
-- **[eliza1](https://github.com/bettercallzaal/eliza1)** `active` — Autonomous agents framework
-- **[fractalbotfeb2026](https://github.com/bettercallzaal/fractalbotfeb2026)** `active` — ETH Boulder event bot
+- **[zabalbot](https://github.com/bettercallzaal/zabalbot)** `🟢 active` – AI-powered community coordination
+- **[eliza1](https://github.com/bettercallzaal/eliza1)** `🟢 active` – Autonomous agents framework
+- **[fractalbotfeb2026](https://github.com/bettercallzaal/fractalbotfeb2026)** `🟢 active` – Event coordination bot
 
-### 🔗 Infrastructure
-- **[ZAONEXUS](https://github.com/bettercallzaal/ZAONEXUS)** `active` — Cross-ecosystem connector
-- **[web3-toolkit](https://github.com/bloodredjay/web3-toolkit)** `active` — Onchain address tools
-- **[agency-os](https://github.com/bloodredjay/agency-os)** `active` — Distributed OS
+### 🏗️ Infrastructure
+- **[ZAONEXUS](https://github.com/bettercallzaal/ZAONEXUS)** `🟢 active` – Cross-ecosystem connector
+- **[web3-toolkit](https://github.com/bloodredjay/web3-toolkit)** `🟢 active` – Onchain address tools
+- **[bettercallzaal-coding-hub](https://github.com/bettercallzaal/bettercallzaal-coding-hub)** `🟢 active` – This hub!
 
-### 📝 Reflections & Strategy
-- **[ethboulderjournal](https://github.com/bettercallzaal/ethboulderjournal)** `active` — ETH Boulder 2026 learnings
-- **[bettercallzaal-strategies](https://github.com/bettercallzaal/bettercallzaal-strategies)** `active` — Strategy frameworks
+### 💡 Research & Strategy
+- **[ethbouldjerjournal](https://github.com/bettercallzaal/ethbouldjerjournal)** `🟢 active` – ETH Boulder 2026 learnings
+- **[bettercallzaal-strategies](https://github.com/bettercallzaal/bettercallzaal-strategies)** `🟢 active` – Strategic frameworks
 
-## 📂 Complete Project Index
+## 📊 Complete Project Index
 
-All 70 projects indexed with status, language, and tags for filtering.
+All 71 projects indexed with status, language, and tags for filtering.
 
-### Top Projects
+### By Status
 
-| Project | Status | Language | Tags |
-|---------|--------|----------|------|
-| [zao-stock](https://github.com/bettercallzaal/zao-stock) | 🟢 active | TypeScript | `event`, `farcaster`, `music`, `community` |
-| [ethboulderjournal](https://github.com/bettercallzaal/ethboulderjournal) | 🟢 active | TypeScript | `event`, `reflection`, `ethereum` |
-| [ZOUNZ](https://github.com/bettercallzaal/ZOUNZ) | 🟢 active | TypeScript | `music`, `farcaster`, `miniapp`, `web3` |
-| [zabalbot](https://github.com/bettercallzaal/zabalbot) | 🟢 active | TypeScript | `bot`, `ai`, `community` |
-| [ZAONEXUS](https://github.com/bettercallzaal/ZAONEXUS) | 🟢 active | TypeScript | `infrastructure`, `connector` |
-| [eliza1](https://github.com/bettercallzaal/eliza1) | 🟢 active | TypeScript | `ai`, `agents` |
-| [web3-toolkit](https://github.com/bloodredjay/web3-toolkit) | 🟢 active | TypeScript | `toolkit`, `web3`, `onchain` |
-| [bettercallzaal-strategies](https://github.com/bettercallzaal/bettercallzaal-strategies) | 🟢 active | TypeScript | `strategy`, `research` |
-| [fractalbotfeb2026](https://github.com/bettercallzaal/fractalbotfeb2026) | 🟢 active | Python | `bot`, `ai`, `event` |
-| [zoundz](https://github.com/hurric4n3ike/zoundz) | 🟢 active | Solidity | `music`, `marketplace`, `miniapp` |
+**🟢 Active** (20): Recently updated, actively maintained
+**🟡 Maintained** (9): Stable, occasional updates
+**⚪ Archived** (42): Historical, reference only
 
-**Full index available in [projects.json](./projects.json)** with all 70 projects.
+### By Language
 
-## 🌐 Links
+- **TypeScript**: 43 projects
+- **Python**: 11 projects
+- **JavaScript**: 8 projects
+- **HTML**: 6 projects
+- **Unknown**: 3 projects
+
+**Full index available in [projects.json](./projects.json)** with all 71 projects.
+
+### Top Active Projects
+
+| Project | Status | Language | Description |
+|---------|--------|----------|-------------|
+| [CoCConcertZ](https://github.com/bettercallzaal/CoCConcertZ) | 🟢 | HTML | CoCConcertZ |
+| [Aurdour](https://github.com/bettercallzaal/Aurdour) | 🟢 | JavaScript | Professional two-deck DJ platform with Flow Mode... |
+| [CustomPDFCreator](https://github.com/bettercallzaal/CustomPDFCreator) | 🟢 | JavaScript | CustomPDFCreator |
+| [zaomusicbot](https://github.com/bettercallzaal/zaomusicbot) | 🟢 | JavaScript | zaomusicbot |
+| [farmdrop](https://github.com/bettercallzaal/farmdrop) | 🟢 | HTML | Web3 token or NFT distribution tool |
+| [fractalbotmarch2026](https://github.com/bettercallzaal/fractalbotmarch2026) | 🟢 | Python | Event bot or fractal coordination tool |
+| [fractalbotfeb2026](https://github.com/bettercallzaal/fractalbotfeb2026) | 🟢 | Python | Event bot or fractal coordination tool |
+| [ZOUNZ](https://github.com/bettercallzaal/ZOUNZ) | 🟢 | TypeScript | On-chain music platform or tool |
+| [ww](https://github.com/bettercallzaal/ww) | 🟢 | TypeScript | General utility |
+| [zski](https://github.com/bettercallzaal/zski) | 🟢 | TypeScript | General utility |
+| [zabalbot](https://github.com/bettercallzaal/zabalbot) | 🟢 | TypeScript | AI-powered community coordination bot |
+| [soundpaint](https://github.com/bettercallzaal/soundpaint) | 🟢 | TypeScript | General utility |
+| [ZAONEXUS](https://github.com/bettercallzaal/ZAONEXUS) | 🟢 | TypeScript | Cross-ecosystem connector |
+| [eliza1](https://github.com/bettercallzaal/eliza1) | 🟢 | TypeScript | Autonomous agents framework |
+| [zao-stock](https://github.com/bettercallzaal/zao-stock) | 🟢 | TypeScript | Token/stock tracking for ZAO ecosystem |
+
+**Full index available in [projects.json](./projects.json)** with all 71 projects.
+
+## 🔗 Links
 
 - **GitHub**: [@bettercallzaal](https://github.com/bettercallzaal)
 - **Farcaster**: [@bettercallzaal](https://warpcast.com/bettercallzaal)
 - **X/Twitter**: [@bettercallzaal](https://x.com/bettercallzaal)
 
-## 🔍 How to Use
+## 🎮 How to Use
 
 ### Browse by Tag
 All projects are tagged with their primary focus. Use the interactive Vercel webpage to filter by:
 - **Technology**: web3, ai, music, agents, bot, toolkit, etc.
-- **Status**: active, archived
+- **Status**: active, maintained
 - **Language**: TypeScript, Python, Solidity, JavaScript, HTML
 
 ### Search
@@ -87,12 +109,12 @@ This hub is built for deployment as a **Next.js 16 webpage** on Vercel featuring
 
 ✅ **Live**:
 - Interactive filtering by tag, language, status
-- Full-text search across all 70 projects
-- Status badges (🟢 active / ⚫ archived)
+- Full-text search across all 71 projects
+- Status badges (🟢 active / 🟡 maintained / ⚪ archived)
 - Tag-based discovery interface
 - Direct GitHub repo links
 
-🔜 **Coming Soon**:
+🔄 **Coming Soon**:
 - OG image generation per project
 - Per-project share buttons (Farcaster, Twitter)
 - README preview modal
@@ -122,29 +144,28 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for full setup guide.
 Each project in `projects.json` includes:
 - **name**: Project name
 - **full_name**: GitHub full name (owner/repo)
-- **description**: Short description
+- **description**: Smart summary
 - **url**: GitHub link
 - **language**: Primary language
-- **status**: `active` (maintained) or `archived` (historical)
-- **tags**: Array of filtering tags
+- **status**: Active/maintained/archived
+- **created**: Creation date
+- **updated**: Last update date
 - **stars**: GitHub stars
-- **created_at**: Creation date
-- **updated_at**: Last update date
+- **size_kb**: Repository size
 
-## 📊 By The Numbers
+## 📈 By The Numbers
 
 **Languages**:
-- TypeScript: 34 projects
-- Python: 6 projects
-- JavaScript: 3 projects
-- HTML: 4 projects
-- Solidity: 1 project
-- Other: 22 projects
+- TypeScript: 43 projects
+- Python: 11 projects
+- JavaScript: 8 projects
+- HTML: 6 projects
+- Unknown: 3 projects
 
-**Top Tags**: web3, project, ai, bot, archive, event, music, infrastructure, agents, toolkit
+**Top Focus Areas**: web3, project, ai, bot, archive, event, music, infrastructure, agents, toolkit
 
 ---
 
-**Last Updated**: 2026-02-20T19:08:15Z  
+**Last Updated**: 2026-03-11  
 **Hub Repo**: [bettercallzaal-coding-hub](https://github.com/bettercallzaal/bettercallzaal-coding-hub)  
 **Data Source**: [projects.json](./projects.json)

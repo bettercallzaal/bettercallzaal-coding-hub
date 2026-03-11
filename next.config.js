@@ -1,1 +1,10 @@
-const config = {\n  reactStrictMode: true,\n};\n\nmodule.exports = config;\n
+const config = {
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+  },
+  swcMinify: true,
+};
+
+module.exports = config;

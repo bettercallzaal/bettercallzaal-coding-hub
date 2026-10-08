@@ -4,7 +4,6 @@ const config = {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },
-  swcMinify: true,
 };
 
 module.exports = config;
